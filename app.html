@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player</title>
-    <link rel="stylesheet" href="app.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="app.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="app.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -65,10 +66,8 @@
             <i class="fa fa-microphone"></i>
             <i class="fa fa-sliders"></i>
             <i class="fa fa-headphones"></i>
-            <i class="fa fa-volume-up"></i>
-            <div class="volume-bar">
-                <div class="volume-bar-color"></div>
-            </div>
+            <i id="vol-icon" class="fa fa-volume-up" onclick="mute()"></i>
+            <input type="range" max="100" value="100" class="clicked">
         </div>
     </footer>
     
