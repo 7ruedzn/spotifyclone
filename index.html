@@ -41,17 +41,16 @@
             <input class="text-field text-field-2" type="text" name="Password" id="1" placeholder="Password">
             <a class="forgot-password" href="">Forgot your password?</a>
         </div>
-    </div>
-    <div class="check-container">
-        <div class="check-login">
-            <input type="checkbox" name="Remember Password" id="check" hidden> 
-            <label for="check" class="checkmark"></label>
-            <div class="remember">Remember me</div>
-            <a href="./app.html">
-                <div class="login-bttn" onclick="redirectToApp()">
-                   <a class="log-in-link" href="./app.html">LOG IN</a> 
-                </div>
-            </a>
+        <div class="check-container">
+            <div class="check-login">
+                <input type="checkbox" name="Remember Password" id="check" hidden> 
+                <label for="check" class="checkmark"></label>
+                <div class="remember">Remember me</div>
+                <!-- send to app.html -->
+                    <div class="login-bttn" onclick="location.href='/app.html';">
+                        <a class="log-in-link">LOG IN</a> 
+                    </div>
+            </div>
         </div>
     </div>
     <div class="divider-2-container">

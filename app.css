@@ -29,9 +29,16 @@ body {
     font-size: 0.4em;
 }
 
-aside{
-    grid-area: side;
+.fa:hover {
+    cursor: pointer;
+    color: #fff;
 }
+
+.fa-heart{font-size: 16px;}
+
+.heart-container{width: 30px;}
+
+aside{grid-area: side;}
 
 main{
     padding: 0px 30px;
